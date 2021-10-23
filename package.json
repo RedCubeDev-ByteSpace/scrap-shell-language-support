@@ -8,6 +8,9 @@
         "url": "https://bytespace.network/"
     },
     "publisher": "RedCubeDev",
+	"repository": {
+        "url": "https://github.com/RedCubeDev-ByteSpace/scrap-shell-language-support"
+    },
     "version": "0.0.1",
     "engines": {
         "vscode": "^1.61.0"
