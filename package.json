@@ -1,0 +1,25 @@
+{
+    "name": "scrap-shell-language-support",
+    "displayName": "Scrap Shell Language Support",
+    "description": "",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.61.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "scs",
+            "aliases": ["Scrap Shell", "scs"],
+            "extensions": [".scs"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "scs",
+            "scopeName": "source.scs",
+            "path": "./syntaxes/scs.tmLanguage.json"
+        }]
+    }
+}
