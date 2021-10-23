@@ -1,7 +1,7 @@
 {
     "name": "scrap-shell-language-support",
     "displayName": "Scrap Shell Language Support",
-	"icon": "https://github.com/RedCubeDev-ByteSpace/scrap-shell-language-support/blob/main/icon.png",
+	"icon": "icon.png",
     "description": "",
 	"author": {
         "name": "RedCubeDev",
