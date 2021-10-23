@@ -3,6 +3,11 @@
     "displayName": "Scrap Shell Language Support",
 	"icon": "https://github.com/RedCubeDev-ByteSpace/scrap-shell-language-support/blob/main/icon.png",
     "description": "",
+	"author": {
+        "name": "RedCubeDev",
+        "url": "https://bytespace.network/"
+    },
+    "publisher": "RedCubeDev",
     "version": "0.0.1",
     "engines": {
         "vscode": "^1.61.0"
