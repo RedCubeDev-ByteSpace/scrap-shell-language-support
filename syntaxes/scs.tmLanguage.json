@@ -6,26 +6,50 @@
 			"include": "#keywords"
 		},
 		{
+			"include": "#labels"
+		},
+		{
 			"include": "#strings"
+		},
+		{
+			"include": "#numerics"
+		},
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#constants"
 		}
 	],
 	"repository": {
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.scs",
-				"match": "\\b(if|while|for|return)\\b"
+				"match": "\\b(print|write|input|inputaction|lastinput|clear|cursorx|cursory|setcourse|set|get|add|sub|mul|div|con|goto|gotosub|die|if|else|return|int|sleep|stepspertick|logicout|logicin|rotout|pistonout|substr|numtobin|bintonum|getchar|getascii|sin|cos|outspeed)\\b"
+			}]
+		},
+		"labels": {
+			"patterns": [{
+				"name": "support.function.scs",
+				"match": "((?<=goto\\b|gotosub\\b).+)|(:.+?\\b)|(>.+?\\b)"
 			}]
 		},
 		"strings": {
 			"name": "string.quoted.double.scs",
 			"begin": "\"",
-			"end": "\"",
-			"patterns": [
-				{
-					"name": "constant.character.escape.scs",
-					"match": "\\\\."
-				}
-			]
+			"end": "\""
+		},
+		"numerics": {
+			"name": "constant.numeric.scs",
+			"match": "[\\d|\\.]+"
+		},
+		"comments": {
+			"name": "comment.line.scs",
+			"match": ";.*$"
+		},
+		"constants":{
+			"name": "storage.type.scs",
+			"match": "on|off"
 		}
 	},
 	"scopeName": "source.scs"
